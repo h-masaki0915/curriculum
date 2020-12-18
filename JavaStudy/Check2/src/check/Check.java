@@ -19,11 +19,9 @@ public class Check {
         Pet pet = new Pet(name, masterName);
         pet.introduce();
 
-        RobotPet robotPet = (RobotPet) new Pet(name, masterName);
-        name = subName;
-        masterName = subMasterName;
         String subName = Constants.CHECK_CLASS_R2D2;
         String subMasterName = Constants.CHECK_CLASS_LUKE;
+        RobotPet robotPet = new RobotPet(subName, subMasterName);
         robotPet.introduce();
     }
 
