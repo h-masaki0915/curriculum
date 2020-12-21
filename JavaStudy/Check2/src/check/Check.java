@@ -3,26 +3,20 @@ package check;
 import constants.Constants;
 
 public class Check {
-    private String firstName = "花岡";
-    private String lastName = "柾";
+    private static String firstName = "花岡";
+    private static String lastName = "柾";
 
-    private void printName() {
-        System.out.println("printNameメソッド → " + firstName + lastName);
-    }
+    private static String printName(String firstName, String lastName) {
+        return firstName + lastName;
+   }
 
     public static void main(String []args){
-        Check check = new Check();
-        check.printName();
+        System.out.println("printerNameメソッド → " + printName(firstName, lastName));
 
-        String name = Constants.CHECK_CLASS_JAVA;
-        String masterName = Constants.CHECK_CLASS_HOGE;
-        Pet pet = new Pet(name, masterName);
+        Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
         pet.introduce();
 
-        String subName = Constants.CHECK_CLASS_R2D2;
-        String subMasterName = Constants.CHECK_CLASS_LUKE;
-        RobotPet robotPet = new RobotPet(subName, subMasterName);
+        RobotPet robotPet = new RobotPet(Constants.CHECK_CLASS_R2D2, Constants.CHECK_CLASS_LUKE);
         robotPet.introduce();
     }
-
 }
