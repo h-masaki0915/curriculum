@@ -1,0 +1,49 @@
+@media screen and (max-width: 479px) {
+	.clearfix::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.wrapper {
+		width: 200px;
+	}
+	.header {
+		width: 200px;
+		margin: auto;
+		height: auto;
+	}
+	.white-box {
+		width: 60px;
+		height: 160px;
+		margin-bottom: 20px;
+		margin-right: 70px;
+	}
+	.right {
+		width: 200px;
+		height: 200px;
+	}
+	.right-box1 {
+		margin-top: 20px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	.right-box2 {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	.right-box3 {
+		margin-right: 30px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+	.left {
+		width: 200px;
+		height: 100px;
+		float: none;
+	}		
+	.footer {
+		width: 200px;
+		height: 300px;
+	}
+	
+}
