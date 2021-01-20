@@ -39,11 +39,12 @@
 	.left {
 		width: 200px;
 		height: 100px;
-		float: none;
+		float: left;
 	}		
 	.footer {
+		margin: auto;
 		width: 200px;
-		height: 300px;
+		height: 100px;
 	}
 	
 }
