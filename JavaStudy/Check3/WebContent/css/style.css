@@ -1,0 +1,13 @@
+h1 {
+	background-color:gray;
+	padding: 10px;
+	font-size: 10px;
+	color: white;
+}
+p {
+	float: none;
+}
+.contents {
+	padding-top:50px;
+	padding-bottom: 50px;
+}
